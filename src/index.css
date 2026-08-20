@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "./tailwind-theme.css";
+@import "./typography.css";
+
+@layer base {
+  html {
+    color-scheme: dark;
+    background: #191b22;
+  }
+
+  body {
+    min-width: 320px;
+    min-height: 100dvh;
+    background:
+      radial-gradient(circle at 50% -20%, rgb(124 77 219 / 0.08), transparent 34rem),
+      #191b22;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
+      "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    line-height: 1.5;
+  }
+
+  ::selection {
+    background: rgb(124 77 219 / 0.38);
+    color: #ffffff;
+  }
+
+  button,
+  a,
+  input,
+  label {
+    touch-action: manipulation;
+  }
+}
+
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 100;
+  translate: 0 -180%;
+  border-radius: 0.375rem;
+  background: #ffffff;
+  color: #191b22;
+  padding: 0.625rem 0.875rem;
+  font-weight: 600;
+  transition: translate 150ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.skip-link:focus {
+  translate: 0;
+}
+
+.canvas-scroll {
+  scrollbar-color: rgb(255 255 255 / 0.24) transparent;
+  scrollbar-width: thin;
+}
+
+.canvas-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.canvas-scroll::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.22);
+}
+
+@keyframes recording-exit-touch-hint {
+  0%,
+  68% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (pointer: coarse) {
+  [data-recording-exit] {
+    animation: recording-exit-touch-hint 1.8s ease-out both;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

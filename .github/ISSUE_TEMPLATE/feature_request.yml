@@ -1,0 +1,21 @@
+name: Feature request
+description: 建议新的能力或体验改进
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    attributes:
+      label: 使用场景
+      description: 你在什么情况下需要这个功能？
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 期望结果
+      description: 理想的操作流程和最终结果是什么？
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 可接受的替代方案
+      description: 如果有临时做法或参考产品，可以写在这里。
