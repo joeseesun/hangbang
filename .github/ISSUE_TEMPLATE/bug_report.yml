@@ -1,0 +1,30 @@
+name: Bug report
+description: 报告可复现的问题
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: textarea
+    attributes:
+      label: 问题描述
+      description: 请说明发生了什么，以及你原本期待什么。
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 打开...
+        2. 点击...
+        3. 看到...
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: 浏览器与设备
+      placeholder: Chrome 版本 / macOS、Windows、iOS、Android
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 截图或补充信息
+      description: 请勿上传私人图片、Token 或浏览器数据库。

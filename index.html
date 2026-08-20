@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#191b22" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="免费的中文 Tier List 梯队图生成器。粘贴或上传图片，自由拖拽排序、编辑等级，一键导出高清 PNG。" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://hang.qiaomu.ai/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:site_name" content="夯榜" />
+    <meta property="og:title" content="夯榜｜免费的 Tier List 梯队图生成器" />
+    <meta property="og:description" content="粘贴图片、自由拖拽、编辑等级，一键导出高清梯队图。" />
+    <meta property="og:url" content="https://hang.qiaomu.ai/" />
+    <meta property="og:image" content="https://hang.qiaomu.ai/share-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="夯榜｜Tier List 梯队图生成器" />
+    <meta name="twitter:description" content="粘贴图片、自由拖拽、编辑等级，一键导出高清梯队图。" />
+    <meta name="twitter:image" content="https://hang.qiaomu.ai/share-card.png" />
+
+    <title>夯榜｜免费的 Tier List 梯队图生成器</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "夯榜",
+        "url": "https://hang.qiaomu.ai/",
+        "applicationCategory": "DesignApplication",
+        "operatingSystem": "Any",
+        "inLanguage": "zh-CN",
+        "isAccessibleForFree": true,
+        "description": "免费的中文 Tier List 梯队图生成器，支持图片粘贴、自由拖拽、等级编辑和高清 PNG 导出。",
+        "author": {
+          "@type": "Person",
+          "name": "向阳乔木",
+          "url": "https://qiaomu.ai/"
+        }
+      }
+    </script>
+    <script
+      defer
+      src="https://umami.qiaomu.ai/script.js"
+      data-website-id="88149fb0-b029-4f49-97b9-e3725a6bac55"
+      data-domains="hang.qiaomu.ai"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator && location.protocol === 'https:') {
+        window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+#!/bin/sh
+# miaoda vite-react: pre-commit — 通用入口，具体门禁内容由 package.json 的 precommit 脚本决定
+# 注册（core.hooksPath=.githooks）由 package.json 的 prepare 脚本在 npm install 时完成，
+# fullstack upgrade 的 activateGitHooks 作为兜底（覆盖 install 早于 git init 的时序）。
+[ "$SKIP_GIT_HOOKS" = "1" ] && exit 0
+if ! npm run precommit; then
+  echo "✗ pre-commit: 校验未通过，已阻断提交（绕过：git commit --no-verify 或 SKIP_GIT_HOOKS=1）" >&2
+  exit 1
+fi
