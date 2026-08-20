@@ -9,6 +9,7 @@
 > A free, no-sign-up Tier List maker for pasting images, arranging tiers, and exporting high-resolution PNGs.
 
 [![在线使用](https://img.shields.io/badge/在线使用-hang.qiaomu.ai-7c4ddb)](https://hang.qiaomu.ai/)
+[![CI](https://github.com/joeseesun/hangbang/actions/workflows/ci.yml/badge.svg)](https://github.com/joeseesun/hangbang/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-15171d.svg)](LICENSE)
 
 **已验证：** 2026-08-20 通过 TypeScript、ESLint、生产构建及桌面/移动端浏览器验收；线上版本可直接使用。
